@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="left-column">
+        <h2>Quiz Questions</h2>
+        <button id="add-question-btn">Add Question</button>
+        <div>
+            <!-- Questions will be added here -->
+
+            <!-- Sample question display -->
+            <div class="question">
+                <p><strong>What is the capital of France?</strong></p>
+                <ul>
+                    <li>Paris ✓</li>
+                    <li>London</li>
+                    <li>Berlin</li>
+                    <li>Madrid</li>
+                </ul>
+                <button>Edit</button>
+                <button>Delete</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="right-column">
+
+        <form id="question-form">
+            <h2>Question Form</h2>
+            <div>
+                <label>Question Text</label><br>
+                <textarea rows="3"></textarea>
+            </div>
+
+            <div>
+                <label>Answer Type</label><br>
+                <input type="radio" value="single"> Single Answer<br>
+                <input type="radio" value="multiple"> Multiple Answers
+            </div>
+
+            <div class="choices">
+                <label>Choices</label>
+                <div class="choice-item">
+                    <input type="checkbox">
+                    <input type="text">
+                </div>
+                <div class="choice-item">
+                    <input type="checkbox">
+                    <input type="text">
+                </div>
+                <div class="choice-item">
+                    <input type="checkbox">
+                    <input type="text">
+                </div>
+                <div class="choice-item">
+                    <input type="checkbox">
+                    <input type="text">
+                </div>
+            </div>
+
+            <button type="submit">Confirm</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
